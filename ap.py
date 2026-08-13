@@ -19,13 +19,13 @@ SETUP (in VS Code terminal):
 
 import os
 import streamlit as st
-from dotenv import load_dotenv
+from dotenv import load_.env
 from groq import Groq
 
 # ---------------------------------------------------------------------------
 # Load API key from .env file
 # ---------------------------------------------------------------------------
-load_dotenv()  # reads the .env file in the same folder and loads it into os.environ
+load_.env()  # reads the .env file in the same folder and loads it into os.environ
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 MODEL_NAME = "llama-3.3-70b-versatile"
